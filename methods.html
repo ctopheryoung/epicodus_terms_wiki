@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <title>Epicodus Terms Wiki</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-invert navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Epicodus Wiki</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Markup Languages <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li role="separator"></li>
+                <li class="dropdown-header">HTML</li>
+                <li class="active"><a href="elements.html">Elements</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">CSS</li>
+                <li><a href="floats.html">Floats</a></li>
+                <li><a href="box-model.html">Box Model</a></li>
+                <li><a href="responsive-design.html">Responsive Design</a></li>
+              </ul>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Javascript <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li role="separator"></li>
+                <li class="dropdown-header">Javascript</li>
+                <li><a href="variables.html">Variables</a></li>
+                <li><a href="functions.html">Functions</a></li>
+                <li><a href="methods.html">Methods</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Jquery</li>
+                <li><a href="jquery.html">Jquery Overview</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="attributes.html">Attributes</a></li>
+              </ul>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Logic <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="branching.html">Branching</a></li>
+                <li><a href="arrays.html">Arrays</a></li>
+                <li><a href="looping.html">Looping</a></li>
+              </ul>
+            </li>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container content">
+      <h1>JavaScript Methods</h1>
+      <P>JavaScript methods are the actions that can be performed on objects.</p>
+      <p>A JavaScript method is a property containing a function definition.</P>
+
+      <h2>Accessing Object Methods</h2>
+      <p>You create an object method with the following syntax:
+      <p class="well">methodName : function() { code lines }</p>
+      <p>You access an object method with the following syntax:</p>
+      <p class="well">objectName.methodName()</p>
+      <p>You will typically describe fullName() as a method of the person object, and fullName as a property.</p>
+      <p>The fullName property will execute (as a function) when it is invoked with ().</p>
+
+      <h2>Using Built-In Methods</h2>
+      <p>This example uses the toUpperCase() method of the String object, to convert a text to uppercase:</p>
+      <div class="well">
+        <p>var message = "Hello world!";</p>
+        <p>var x = message.toUpperCase();</p>
+      </div>
+      <p>The value of x, after execution of the code above will be:</p>
+      <h5 class="well">HELLO WORLD!</h5>
+      <h2>Adding New Methods</h2>
+      <p>Defining methods to an object is done inside the constructor function:</p>
+      <div class="well">
+        <h3>Example</h3>
+        <p>function person(firstName, lastName, age, eyeColor) {<br>
+        this.firstName = firstName;<br>
+        this.lastName = lastName;<br>
+        this.age = age;<br>
+        this.eyeColor = eyeColor;<br>
+        this.changeName = function (name) {<br>
+        this.lastName = name;<br>
+        };<br>
+        }</p>
+      </div>
+      <p>The changeName() function assigns the value of name to the person's lastName property.</p>
+    </div>
+
+  </body>
+</html>

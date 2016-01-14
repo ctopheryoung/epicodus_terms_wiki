@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <title>Epicodus Terms Wiki</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-invert navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Epicodus Wiki</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Markup Languages <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li role="separator"></li>
+                <li class="dropdown-header">HTML</li>
+                <li><a href="elements.html">Elements</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">CSS</li>
+                <li class="active"><a href="floats.html">Floats</a></li>
+                <li><a href="box-model.html">Box Model</a></li>
+                <li><a href="responsive-design.html">Responsive Design</a></li>
+              </ul>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Javascript <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li role="separator"></li>
+                <li class="dropdown-header">Javascript</li>
+                <li><a href="variables.html">Variables</a></li>
+                <li><a href="functions.html">Functions</a></li>
+                <li><a href="methods.html">Methods</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Jquery</li>
+                <li><a href="jquery.html">Jquery Overview</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="attributes.html">Attributes</a></li>
+              </ul>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Logic <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="branching.html">Branching</a></li>
+                <li><a href="arrays.html">Arrays</a></li>
+                <li><a href="looping.html">Looping</a></li>
+              </ul>
+            </li>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container content">
+      <h1>Float Property</h1>
+      <P>In its simplest use, the float property can be used to wrap text around images.</p>
+      <p>The following example specifies that an image should float to the right in a text:</P>
+      <h4>Examples:</h4>
+      <div class="floats">
+        <p class="right-float">Floated right</p>
+        <p class="left-float">Floated Left</p>
+      </div>
+
+      <h1>Clear Property</h1>
+      <p>The clear property is used to control the behavior of floating elements.
+
+      <p>Elements after a floating element will flow around it. To avoid this, use the clear property.</p>
+
+      <p>The clear property specifies on which sides of an element floating elements are not allowed to float:</p>
+    </div>
+  </body>
+</html>
