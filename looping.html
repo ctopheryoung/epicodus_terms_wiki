@@ -49,14 +49,14 @@
                 <li role="separator" class="divider"></li>
                 <li class="dropdown-header">Jquery</li>
                 <li><a href="jquery.html">Jquery Overview</a></li>
-                <li class="active"><a href="forms.html">Forms</a></li>
+                <li><a href="forms.html">Forms</a></li>
               </ul>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Logic <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="branching.html">Branching</a></li>
                 <li><a href="arrays.html">Arrays</a></li>
-                <li><a href="looping.html">Looping</a></li>
+                <li class="active"><a href="looping.html">Looping</a></li>
               </ul>
             </li>
         </div><!--/.nav-collapse -->
@@ -65,33 +65,44 @@
 
 
     <div class="container content">
-      <h1>Forms and Examples</h1>
-      <P>Forms are written in HTML, styled with CSS and/or Bootstrap and given functionality through JavaScript and/or jQuery.</P>
-
-      <h2>HTML</h2>
+      <h1>Looping Types</h1>
+      <p>JavaScript uses several different kinds of loops</p>
       <ul>
-      <li>Use &lt;form&gt; elements to define an HTML form.</li>
-      <li>Use &lt;input&gt; elements to define text and radio input and to define a submit button</li>
-      <li>&lt;input type="text"&gt; will define a one-line text input field</li>
-      <li>&lt;input type="radio"&gt; will define radio buttons to let a user select one of a limited number of choices</li>
-      <li>&lt;input type="submit"&gt; will define a button for submitting a form to a <strong>form-handler</strong>.</li>
+        <li><strong>for</strong> - loops through a block of code a number of times</li>
+        <li><strong>for/in</strong> - loops through the properties of an object</li>
+        <li><strong>while</strong> - loops through a block of code while a specified condition is true</li>
+        <li><strong>do/while</strong> - also loops through a block of code while a specified condition is true</li>
       </ul>
-
-      <h3>Example Form with Checkboxes</h3>
-
-      <div class="checkbox">
-        <label>
-          <input type="checkbox" value="">
-          This is option one.
-        </label>
+      <h3>The for Loop</h3>
+      <p>The for loop is often the tool you will use when you want to creat a loop.</p>
+      <p>A for loop has the following syntax:</p>
+      <div class="well">
+        <p>for (statement 1; statement 2; statement 3) {<br>
+          code block to be executed<br>
+        }</p>
       </div>
-      <div class="checkbox">
-        <label>
-          <input type="checkbox" value="">
-          This is option two.
-        </label>
+      <p>Statement 1 is executed before the loop starts.</p>
+      <p>Statement 2 defines the condition for the loop to run.</p>
+      <p>Statement 3 increases the value each time the code block inside the loop is executed.</p>
+      <h3>The For/In Loop</h3>
+      <p>The JavaScript For/In statement loops through the properties if an object.</p>
+      <h3>The While Loop</h3>
+      <p>The while loop loops through a block of code as long as a specified condition is true.</p>
+      <h4>Syntax</h4>
+      <div class="well">
+        <p>while (condition) {<br>
+        code block to be executed<br>
+        }</p>
       </div>
-
+      <h3>The Do/While Loop</h3>
+      <p>The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.</p>
+      <h4>Syntax</h4>
+      <div class="well">
+        <p>do {<br>
+          code block to be executed<br>
+        }<br>
+        while (condition);</p>
+      </div>
     </div>
   </body>
 </html>

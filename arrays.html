@@ -49,13 +49,13 @@
                 <li role="separator" class="divider"></li>
                 <li class="dropdown-header">Jquery</li>
                 <li><a href="jquery.html">Jquery Overview</a></li>
-                <li class="active"><a href="forms.html">Forms</a></li>
+                <li><a href="forms.html">Forms</a></li>
               </ul>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Logic <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="branching.html">Branching</a></li>
-                <li><a href="arrays.html">Arrays</a></li>
+                <li class="active"><a href="arrays.html">Arrays</a></li>
                 <li><a href="looping.html">Looping</a></li>
               </ul>
             </li>
@@ -63,35 +63,29 @@
       </div>
     </nav>
 
-
     <div class="container content">
-      <h1>Forms and Examples</h1>
-      <P>Forms are written in HTML, styled with CSS and/or Bootstrap and given functionality through JavaScript and/or jQuery.</P>
-
-      <h2>HTML</h2>
-      <ul>
-      <li>Use &lt;form&gt; elements to define an HTML form.</li>
-      <li>Use &lt;input&gt; elements to define text and radio input and to define a submit button</li>
-      <li>&lt;input type="text"&gt; will define a one-line text input field</li>
-      <li>&lt;input type="radio"&gt; will define radio buttons to let a user select one of a limited number of choices</li>
-      <li>&lt;input type="submit"&gt; will define a button for submitting a form to a <strong>form-handler</strong>.</li>
-      </ul>
-
-      <h3>Example Form with Checkboxes</h3>
-
-      <div class="checkbox">
-        <label>
-          <input type="checkbox" value="">
-          This is option one.
-        </label>
+      <h1>JavaScript Arrays</h1>
+      <p>JavaScript arrays are used to store multiple values in a single variable. An array is a special variable, which can hold more than one value at a time.</p>
+      <h3>Example:</h3>
+        <div class="well">
+          <p>var numbers = [ 1, 2, 3, 4]</p>
+        </div>
+      <h3>Adding and removing elements from Arrays</h3>
+      <p>To add an element to an existing array, use the .push method. This adds the element to the end of the array.</p>
+      <div class="well">
+        <p>var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+            fruits.push("Lemon");<br>
+            fruits;<br>
+            ["Banana", "Orange", "Apple", "Mango, "Lemon"]</p>
       </div>
-      <div class="checkbox">
-        <label>
-          <input type="checkbox" value="">
-          This is option two.
-        </label>
+      <p>To remove an element from an array use the .pop() method. This will remove the last element from the array (the method does not accept an argument).</p>
+      <div class="well">
+        <p>var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+            fruits.pop();<br>
+            fruits;<br>
+            ["Banana", "Orange", "Apple"]</p>
       </div>
-
     </div>
+
   </body>
 </html>
