@@ -2,6 +2,12 @@ div.content {
   margin-top: 40px;
 }
 
+#index-content {
+  text-align: center;
+  font-family: sans-serif;
+  margin-top: 300px;
+}
+
 .right-float{
   float: right;
 }
